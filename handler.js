@@ -1,6 +1,6 @@
 // Config
 var config = {
-    botName: 'ErikBot',
+    botName: 'nbot-wa',
     operator: ['+34626218348'],
     prefix: process.env.prefix ? new RegExp('^' + process.env.prefix) : /^[°•π÷×¶∆£¢€¥®™✓_=|~!?@#$%^&.\/\\©^]/,
     downloadStatus: false, // Curi Status Orang :|
