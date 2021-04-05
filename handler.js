@@ -6,24 +6,24 @@ var config = {
     downloadStatus: false, // Curi Status Orang :|
     devMode: false, // true,
     msg: {
-        notAdmin: '🔰 Maaf anda bukan admin grup',
-        notGroup: '👨‍👩‍👧‍👦 Fitur ini hanya bisa digunakan di grup',
-        notBotAdmin: '🔰 Bot belum menjadi admin grup',
-        notURL: '🌐 Tidak ada URL',
-        noMedia: '📷 Tidak ada Media',
-        noArgs: '❓ Tidak ada argumen',
-        noJid: '❓ Tidak ada @user yang disebut',
-        notAllowed: `❌ Fitur ini tidak bisa kamu gunakan`,
+        notAdmin: 'Lo siento, no eres un administrador de grupo',
+        notGroup: '👨‍👩‍👧‍👦 Esta función solo se puede utilizar en grupos',
+        notBotAdmin: '🔰 El bot aún no es administrador de grupo',
+        notURL: '🌐 Sin URL',
+        noMedia: '📷 Sin media',
+        noArgs: '❓ Sin argumentos',
+        noJid: '❓ No se ha nombrado ningún @user',
+        notAllowed: `❌ No puede utilizar esta función`,
         add: '➕ Menambahkan:\n',
         remove: '➖ Mengeluarkan:\n',
         promote: '🔰 Menambahkan:\n',
         demote: '🙍‍♂️ Menurunkan:\n',
-        self: 'Kok aku?',
-        dev: '👨‍💻 Fitur masih dalam tahap pengembangan 🔧',
-        devOff: '🔧 Fitur dinonaktifkan oleh developer',
-        groupOff: '❌ Fitur dinonaktifkan untuk grup ini',
-        success: '✅ Sukses',
-        success: '❌ Gagal',
+        self: '¿Como estoy?',
+        dev: '👨‍💻 Funciones aún en desarrollo 🔧',
+        devOff: '🔧 Función deshabilitada por el desarrollador',
+        groupOff: '❌ La función está deshabilitada para este grupo',
+        success: '✅ Hecho',
+        success: '❌ Denegado',
         list: value => `- ${value}`,
         listUser: user => `- @${user.replace(/^@?|@c.us$/, '')}`,
         promoteEach: user => `- @${user} menjadi Admin 🔰`,
@@ -43,11 +43,11 @@ var config = {
                 case 'video':
                     return `
 *${item.type}*
-├> Judul: ${item.title}
-├> Durasi: ${item.duration[0]} (${item.duration[1]})
-├> Channel: ${item.author.name} ${item.author.verified ? item.author.verified == 'artist' ? '🎶' : '✅' : ''}
+├> Título: ${item.title}
+├> Duración: ${item.duration[0]} (${item.duration[1]})
+├> Canal: ${item.author.name} ${item.author.verified ? item.author.verified == 'artist' ? '🎶' : '✅' : ''}
 ├> Link: ${item.link}
-├> Deskripsi: ${item.description}
+├> Descripción: ${item.description}
 `.slice(1, -1)
                 case 'channel':
                     return `
